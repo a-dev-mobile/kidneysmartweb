@@ -1,0 +1,90 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Install Dependencies",
+            "type": "shell",
+            "command": "npm install",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Development Server",
+            "type": "shell",
+            "command": "npm run dev",
+            "group": "build",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "Clean and Rebuild",
+            "type": "shell",
+            "command": "rm -rf .next && npm run build",
+            "group": "build",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "Build for Production",
+            "type": "shell",
+            "command": "npm run build",
+            "group": "build",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "Start Production Server",
+            "type": "shell",
+            "command": "npm start",
+            "group": "build",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "Lint Project",
+            "type": "shell",
+            "command": "npm run lint",
+            "group": "none",
+            "problemMatcher": [
+                "$eslint-stylish"
+            ]
+        },
+        {
+            "label": "Run Type Checks",
+            "type": "shell",
+            "command": "npm run type-check",
+            "group": "test",
+            "problemMatcher": [
+                "$tsc"
+            ]
+        },
+        {
+            "label": "Export Static Site",
+            "type": "shell",
+            "command": "npm run export",
+            "group": "none",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "Analyze Bundle Size",
+            "type": "shell",
+            "command": "npm run analyze",
+            "group": "none",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always"
+            }
+        }
+    ]
+}
